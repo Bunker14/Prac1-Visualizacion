@@ -2,26 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Visualización de Juegos de Steam</title>
+  <title>Visualización de Steam</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Proyecto de Visualización – Steam Games</h1>
+<body style="background-color: #1b1b1b; color: white;">
 
-  <h2>1. Géneros más populares (2014-2024)</h2>
-  <iframe src="visualizaciones/generos.html" width="100%" height="600"></iframe>
+  <div class="container py-5 text-center">
+    <img src="images/controller.png" alt="Mando" style="width: 100px;">
+    <h1 class="my-4">Visualización de Juegos de Steam</h1>
+    <p class="lead">Explora los datos de más de 90,000 juegos: géneros, precios, popularidad y mucho más.</p>
 
-  <h2>2. Relación entre precio y popularidad</h2>
-  <iframe src="visualizaciones/precio_vs_popularidad.html" width="100%" height="600"></iframe>
-
-  <h2>3. Desarrolladores más activos y mejor valorados</h2>
-  <iframe src="visualizaciones/desarrolladores.html" width="100%" height="600"></iframe>
-
-  <h2>4. Evolución de etiquetas</h2>
-  <iframe src="visualizaciones/etiquetas.html" width="100%" height="600"></iframe>
-
-  <h2>5. Idiomas soportados por género</h2>
-  <iframe src="visualizaciones/idiomas.html" width="100%" height="600"></iframe>
+    <div class="row mt-5">
+      <div class="col-md-4 mb-4">
+        <a href="visualizaciones/generos.html" class="btn btn-outline-light w-100 py-3">📈 Géneros populares</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="visualizaciones/precio_vs_popularidad.html" class="btn btn-outline-light w-100 py-3">💸 Precio vs Popularidad</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="visualizaciones/desarrolladores.html" class="btn btn-outline-light w-100 py-3">🛠️ Desarrolladores</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="visualizaciones/etiquetas.html" class="btn btn-outline-light w-100 py-3">🏷️ Etiquetas más comunes</a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="visualizaciones/idiomas.html" class="btn btn-outline-light w-100 py-3">🌐 Idiomas por género</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
